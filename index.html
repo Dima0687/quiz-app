@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./quizData.js" type="module"></script>
+    <script src="./script.js" defer type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <h1>Quiz App</h1>
+    <div id="styling-container">
+        <section id="progress-bar-container">
+            <div id="progress-bar-counter">
+                <p id="quiz-counter"># <span id="count-from">4</span> of <span class="count-to">10</span></p>
+                <p class="wrong-answers"><i class="fa-regular fa-circle-xmark"></i> <span>0</span></p>
+                <p class="right-answers"><i class="fa-regular fa-circle-check"></i> <span>0</span></p>
+            </div>
+            <progress id="progress-bar" max="10" value="4"></progress>
+        </section>
+        <section id="quiz-container">
+            <h2 id="quiz-question">Question</h2>
+            <div id="answer-container">
+                <p class="quiz-answer">A<span id="answer-a"> Answer 1</span></p>
+                <p class="quiz-answer">B<span id="answer-b"> Answer 2</span></p>
+                <p class="quiz-answer">C<span id="answer-c"> Answer 3</span></p>
+            </div>
+        </section>
+        <section id="answer-buttons-container">
+            <button class="btn-answer" id="btn-answer-a">A</button>
+            <button class="btn-answer" id="btn-answer-b">B</button>
+            <button class="btn-answer" id="btn-answer-c">C</button>
+        </section>
+    </div>
+</body>
+</html>
